@@ -20,6 +20,7 @@ headers = {
     "Authorization": "Bearer " + API_KEY
 }
 
+# Attempt to create the directory to store CSV output in
 current_directory = os.getcwd()
 output_directory = os.path.join(current_directory, 'Braintrust Support Script Output')
 try:
@@ -62,6 +63,7 @@ for dataset in dataset_response.json()["objects"]:
     df.to_csv(output_directory + '/' + file_name, index=False)
 
     
+
 
 
 
