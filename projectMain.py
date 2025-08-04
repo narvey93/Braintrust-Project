@@ -4,13 +4,13 @@ import json
 import pandas as pd
 
 # Define the specific project ID that we want to search
-PROJECT_ID = "INSERT_PROJECT_ID"
+PROJECT_ID = "YOUR_PROJECT_ID"
 
 # Define the base API url for easy reuse
 API_URL = "https://api.braintrust.dev/v1"
 
 # Insert your API key
-API_KEY = "INSERT_API_KEY"
+API_KEY = "YOUR_API_KEY"
 
 # Create the base API urls for retrieving experiments and datasets
 GET_EXPERIMENT_URL = API_URL + "/experiment?project_id=" + PROJECT_ID
@@ -63,6 +63,7 @@ for dataset in dataset_response.json()["objects"]:
     df.to_csv(output_directory + '/' + file_name, index=False)
 
     
+
 
 
 
