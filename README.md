@@ -20,3 +20,5 @@ The arguments are as follows:
 -p, --projectID : The project ID you want to pull data from
 -a, --apiKey : The API key you are going to use with the script
 ```
+
+I chose to use option arguments for the Project ID and API Key as I personally find that more readable for someone that isn't familiar with the script, as opposed to passing both as positional arguments. 
