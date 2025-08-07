@@ -43,11 +43,9 @@ if __name__ == "__main__":
 
     for experiment in experiment_response.json()["objects"]:
         folder_name = experiment["name"]
-        print(folder_name)
         file_name = folder_name + ".csv"
 
         output_directory = create_folder(folder_name)
-        print(output_directory)
 
         # Get the event data for each experiment
         GET_EVENTS_URL = API_URL + "/experiment/" + experiment["id"] + "/fetch"
@@ -61,11 +59,9 @@ if __name__ == "__main__":
 
     for dataset in dataset_response.json()["objects"]:
         folder_name = dataset["name"]
-        print(folder_name)
         file_name = folder_name + ".csv"
 
         output_directory = create_folder(folder_name)
-        print(output_directory)
 
         # Get the event data for each dataset
         GET_EVENTS_URL = API_URL + "/dataset/" + dataset["id"] + "/fetch"
@@ -80,6 +76,7 @@ if __name__ == "__main__":
 
 
         
+
 
 
 
